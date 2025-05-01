@@ -1,16 +1,17 @@
 import { StrictMode, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './Login/Login.jsx';
-import Register from './Login/Register.jsx';
-import Play from './MemoryCardGame/Play.css';
-import Easy from './MemoryCardGame/MemoryEasy.jsx';
-import Medium from './MemoryCardGame/MemoryMedium.jsx';
-import MemoryCardGame from './MemoryCardGame/MemoryCardGame.jsx';
-import Congratulations from "./MemoryCardGame/Congratulation.jsx";
-import CongtEasy from "./MemoryCardGame/Congratseasy.jsx";
-import CongtNormal from "./MemoryCardGame/Congratsnormal.jsx";
-import History from './MemoryCardGame/History.jsx';
+import Login from './Login/Login';
+import Register from './Login/Register';
+import './MemoryCardGame/Play';
+import Play from './MemoryCardGame/Play';
+import Easy from './MemoryCardGame/MemoryEasy';
+import Medium from './MemoryCardGame/MemoryMedium';
+import MemoryCardGame from './MemoryCardGame/MemoryCardGame';
+import Congratulations from "./MemoryCardGame/Congratulation";
+import CongtEasy from "./MemoryCardGame/Congratseasy";
+import CongtNormal from "./MemoryCardGame/Congratsnormal";
+import History from './MemoryCardGame/History';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));

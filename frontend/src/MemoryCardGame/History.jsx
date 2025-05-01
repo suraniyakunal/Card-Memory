@@ -9,7 +9,7 @@ const History = () => {
     const fetchHistory = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/gameResults/history', {
+        const res = await axios.get('http://localhost:5000/api/history', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -34,7 +34,7 @@ const History = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </div> 
   );
 };
 
