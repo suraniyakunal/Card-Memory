@@ -1,40 +1,26 @@
+// Play2.jsx
 import React, { useState } from 'react';
-import LevelSelectModal from '../components/LevelSelectModal';
-import Modal from "react-modal";
-import './LevelSelectModal.module.css';
-import styles from './LevelSelectModal.module.css';
+import Modal from './Modal';
+import './Modal.css';
 
+function Play2() {
+  const [showModal, setShowModal] = useState(true);
+  const [difficulty, setDifficulty] = useState(null);
 
-const Play = () => {
-  const [modalOpen, setModalOpen] = useState(true);
-  const [level, setLevel] = useState(null);
-
-  const handleSelectLevel = (selectedLevel) => {
-    setLevel(selectedLevel);
-    setModalOpen(false);
-   
+  const handleSelect = (level) => {
+    setDifficulty(level);
+    setShowModal(false);
+    console.log("Selected:", level);
+    // start the game here
   };
 
   return (
-    <>
-      <LevelSelectModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        onSelectLevel={handleSelectLevel}
-      />
-    <div className={styles.modalOverlay}>
-      <div className={styles.modalContainer}>
-        <h2 className={styles.modalTitle}>Select Difficulty</h2>
-        <div className={styles.levelButtons}>
-          <button className={styles.levelButton}>Easy</button>
-          <button className={styles.levelButton}>Medium</button>
-          <button className={styles.levelButton}>Hard</button>
-        </div>
-      </div>
+    <div>
+      <Modal show={showModal} onClose={() => setShowModal(false)} onSelect={handleSelect} />
+      {!showModal && <h1>Game started with {difficulty} mode</h1>}
     </div>
-    </>
   );
-};
+}
 
-export default Play;
+export default Play2;
 

@@ -1,0 +1,84 @@
+/* Modal.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.modal {
+  background: linear-gradient(145deg, #1c1c1c, #292929);
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+  border: 2px solid #00ffaa;
+  border-radius: 12px;
+  padding: 30px 40px;
+  text-align: center;
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00ffaa;
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #111;
+  color: #00ffaa;
+  border: 2px solid #00ffaa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-buttons button:hover {
+  background-color: #00ffaa;
+  color: #111;
+  box-shadow: 0 0 10px #00ffaa88;
+}
+
+.close-btn {
+  margin-top: 25px;
+  padding: 8px 18px;
+  background-color: transparent;
+  border: 2px solid red;
+  color: red;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.close-btn:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 10px red;
+}
+

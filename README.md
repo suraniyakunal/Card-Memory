@@ -1,13 +1,9 @@
 
 ## Card Memory Game - Simplified Skill Test
 
-### Welcome!
-Thank you for your interest in joining the Echoes of Aetherium Team! This is a simplified skill test designed to understand your approach to problem-solving and development. The tasks are categorized based on your area of expertise.
-
----
-
 ### 🎯 **Objective:**
-Build a small part of a card memory game based on your assigned role. This is meant to be completed within **2–3 hours** to showcase your skills.
+Build a small part of a card memory game based on Fullstack developer role.
+
 
 ### 🛠️ **Tech Stack:**
 - Frontend: React, Vite
@@ -28,69 +24,53 @@ Build a small part of a card memory game based on your assigned role. This is me
    ```bash
    cd ./backend
    npm install
-   npm start
+   npm run dev
    ```
 4. Set up the frontend:
    ```bash
    cd ../frontend
    npm install
-   npm start
+   npm run dev
    ```
 5. Visit `http://localhost:5173` to see the project.
 
 ---
 
-### 🧩 **Task Breakdown by Role (Ordered by Importance):**
-
-#### **Tech Lead:**
-- Review the existing codebase and suggest architectural improvements.
-- Draft a brief project roadmap highlighting key milestones and dependencies for scaling the game.
-
-#### **Project Manager:**
-- Create a simple project plan or task board to showcase how you would organize and prioritize tasks for a small team.
-- Identify potential risks in the project and propose mitigation strategies.
+### 🧩 **Task Done for Fullstack Developer Role :**
 
 #### **Frontend Developer:**
 - Style the login page to be visually appealing and responsive.
+
+=>  To see the login page please Visit `http://localhost:5173/login`.
+
 - Create a modal dialog for level selection (Easy, Medium, Hard).
+
+=> To see the dialog Modal made by me go to Card-Memory/frontend/src/main.jsx,
+   then go to line 52 change the component <Play/> to <Play2/> and save the changes,
+   Visit `http://localhost:5173/Play`
 
 #### **Backend Developer:**
 - Implement a simple API endpoint to save game results.
+
+=> To see the schema I made to store the scores check Card-Memory/backend/models/GameResult.js. Play the game to store it. 
+
 - Create a route to fetch the game result history (no need for complex authentication).
+
+=> To check if the GameResult is stored, Use Postman for Get and Post requests. Also use this path `http://localhost:5173/api/history` to record data and display it.
+
 
 #### **Full Stack Developer:**
 - Complete both the Frontend and Backend tasks.
+
+=> Already did in the upper sections.
+
 - Integrate the API to display the game result history on a new page.
 
-#### **Web3 Developer:**
-- Implement MetaMask wallet connection.
-- Show a message displaying the connected wallet address.
+=> To see the game results check `http://localhost:5173/history`.
 
-#### **Blockchain Developer:**
-- Implement a simple Solidity smart contract that handles basic game logic (e.g., validating moves).
-- Deploy the contract locally using Hardhat and demonstrate interaction with the frontend.
-
-#### **Software Engineer:**
-- Optimize the card-flip logic for smooth performance.
-- Implement basic automated tests for the frontend.
-
-#### **Designer:**
-- Create assets like a styled Play button and card designs.
-- Suggest UI/UX improvements for the main screen.
-
-#### **QA Tester:**
-- Create a comprehensive testing plan that outlines your testing strategy for the card memory game, including at least 8 test cases with detailed steps and expected outcomes.  
-- Additionally, suggest best practices for maintaining quality throughout the development lifecycle.
-
----
 
 ### 📝 **Submission:**
 - Once completed, please submit your work to **[admin@belolabs.com](mailto:admin@belolabs.com)**.
 - Share any notes, assumptions, or challenges you encountered.
 
-### 💡 **Need Help?**
-If you have any questions or need guidance, feel free to reach out. We’re here to support you!
-
----
-
-### ⚡ **Good Luck and Have Fun!**
+=> I wanna share some things. While setting up the project the frontend wasn't working properly and had a lot of errors which I had to to solve first to run it. Errors like Syntax error, Importing errors etc. It should have completed in 3 hours but because of the problems with the file it took more than that. I completed every task mentioned for Fullstack developer role. This is all I have to say. Have a nice day and I'm looking forward to your positive response.

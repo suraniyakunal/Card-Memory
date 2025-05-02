@@ -5,6 +5,7 @@ import Login from './Login/Login';
 import Register from './Login/Register';
 import './MemoryCardGame/Play';
 import Play from './MemoryCardGame/Play';
+import Play2 from './MemoryCardGame/Play2';
 import Easy from './MemoryCardGame/MemoryEasy';
 import Medium from './MemoryCardGame/MemoryMedium';
 import MemoryCardGame from './MemoryCardGame/MemoryCardGame';
@@ -24,8 +25,7 @@ const App = () => {
   //   setIsAuthenticated(false);
   //   localStorage.removeItem('token');
   // };
-
-  return (
+return (
     <Router>
       <Routes>
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
